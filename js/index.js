@@ -16,9 +16,7 @@ const vaciarPersonajes = () => {
 };
 const ponerPersonajes = (arrayPersonajes) => {
   vaciarPersonajes();
-  for (const {
-    arrayPersonajes: { nombre, familia, vivo },
-  } of ponerPersonajes) {
+  for (const { nombre, familia, vivo } of arrayPersonajes) {
     const arraypersonajesElemento = document
       .querySelector(".personaje-dummy")
       .cloneNode(true);
